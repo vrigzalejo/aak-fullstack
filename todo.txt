@@ -1,0 +1,15 @@
+Within time limit of 3 days please create the following:
+
+**Backend**
+1- A signup apis in Django rest frame work.
+2- Handle a proper responses and status code.
+
+
+**Frontend**
+1- Signup form in React.
+2- Use TypeScript.
+3- Use Redux for State Management if needed.
+
+
+Follow best practices in both field.
+Include instruction or docker container.
