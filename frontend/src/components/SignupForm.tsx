@@ -32,13 +32,6 @@ interface FormErrors {
     [key: string]: string | string[]
 }
 
-interface BackendError {
-    message?: string
-    errors?: {
-        [key: string]: string[]
-    }
-}
-
 const SignupForm: React.FC = () => {
     const dispatch = useDispatch<AppDispatch>()
     const { loading, error, success } = useSelector((state: RootState) => state.auth)
@@ -283,6 +276,7 @@ const SignupForm: React.FC = () => {
                         id="email"
                         name="email"
                         value={formData.email}
+                        onChange={handleChange}
                         className={`form-input ${hasFieldError('email') ? 'error' : ''}`}
                         placeholder="Enter your email"
                     />
